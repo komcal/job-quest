@@ -1,1 +1,3 @@
-backend/node_modules
+node_modules
+frontend/index2.html
+bundle.js
