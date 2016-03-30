@@ -21,6 +21,14 @@ $event-color: white;
     font-size: 20px;
   }
 }
+.showall-button{
+  padding: 10px 30px;
+  margin-top: 20px;
+  background-color: rgb(228, 88, 19);
+  color: white;
+  border: none;
+  border-radius: 3px;
+}
 @media (max-width: 1200px){
   .event{
     width: 100%;

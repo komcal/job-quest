@@ -1,8 +1,13 @@
 import React from 'react';
 import EventListItem from './event_list_item';
 const EventList = (props) =>{
+  var a = props.num;
   const events = props.eventList.map(({columns}) =>{
     return columns.map((data) =>{
+      a--;
+      if(a < 0)
+        return null;
+      else
         return (
           <EventListItem
             className="event"

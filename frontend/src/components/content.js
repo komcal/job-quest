@@ -5,7 +5,7 @@ const Content = (props) => {
   return (
     <div className="container content">
       <ContentHeader />
-      <EventList eventList={props.eventData}/>
+      <EventList eventList={props.eventData} num={props.num}/>
     </div>
   );
 }
