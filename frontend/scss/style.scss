@@ -2,6 +2,33 @@ $event-color: white;
 body{
   font-family: 'Roboto', sans-serif;
 }
+.content-header{
+  .title{
+    color: rgb(235, 123, 42);
+  }
+}
+.nav{
+  display: flex;
+  align-items: center;
+  .btn-signup{
+    border-radius: 5px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: none;
+    border: solid 1px black;
+  }
+  .btn-list{
+    border-radius: 5px;
+    background-color: rgb(22, 117, 217);
+    color: white;
+    padding: 5px;
+    box-shadow: none;
+    border: solid 1px rgb(22, 117, 217);
+  }
+  li{
+    padding: 7px;
+  }
+}
 .event-list{
   display: flex;
   flex-wrap: wrap;
@@ -34,17 +61,32 @@ body{
 }
 @media (max-width: 1200px){
   .event{
-    width: 100%;
     img{
-      width: 100%;
+      height: 200px;
     }
   }
 }
-@media (max-width:770px){
+@media (max-width:992px){
+  .event{
+    img{
+      height: 150px;
+    }
+  }
+}
+@media (max-width:730px){
+  .event{
+    img{
+      height: 120px;
+    }
+  }
+}
+
+@media (max-width:600px){
   .event{
     width: 100%;
     img{
       width: 100%;
+      height: auto;
     }
   }
 }
