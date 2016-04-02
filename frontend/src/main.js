@@ -15,6 +15,7 @@ require('../scss/style.scss');
     }
     getTrips(){
       $.get('https://www.takemetour.com/api/home', (data) =>{
+        console.log(data);
         this.setState({
           eventData: data.inspiration_layouts
         });
