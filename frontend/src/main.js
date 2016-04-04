@@ -14,7 +14,11 @@ require('../scss/style.scss');
       };
     }
     getTrips(){
-      $.get('https://www.takemetour.com/api/home', (data) =>{
+      var getTrip = new Promise((resolve, reject)=>{
+        $.get('https://www.takemetour.com/api/home', (data) =>{
+          if(data) resolve(data);
+        });
+      }).then(data => {
         this.setState({
           eventData: data.inspiration_layouts
         });
